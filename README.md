@@ -1,5 +1,3 @@
-# FreeV2rng
-
 {
   "log": {
     "level": "warn",
