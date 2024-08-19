@@ -1,0 +1,1106 @@
+{
+
+  “log”: {
+
+    “disabled”: true,
+
+    “level”: “panic”
+
+  },
+
+  “dns”: {
+
+    “servers”: [
+
+      {
+
+        “tag”: “@FREEV2RNG👈کانال+تلگرام-dns”,
+
+        “address”: https://8.8.8.8/dns-query,
+
+        “address_resolver”: “direct-dns”,
+
+        “address_strategy”: “prefer_ipv6”,
+
+        “strategy”: “prefer_ipv6”,
+
+        “detour”: “@FreeV2rng👈کانال+تلگرام”
+
+      },
+
+      {
+
+        “tag”: “@FreeV2rng-dns”,
+
+        “address”: https://8.8.8.8/dns-query,
+
+        “address_resolver”: “direct-dns”,
+
+        “address_strategy”: “prefer_ipv6”,
+
+        “strategy”: “prefer_ipv6”,
+
+        “detour”: “@FreeV2rng”
+
+      },
+
+      {
+
+        “tag”: “direct-dns”,
+
+        “address”: “local”,
+
+        “address_strategy”: “prefer_ipv6”,
+
+        “strategy”: “prefer_ipv6”,
+
+        “detour”: “direct”
+
+      },
+
+      {
+
+        “tag”: “block-dns”,
+
+        “address”: “rcode://success”
+
+      }
+
+    ],
+
+    “rules”: [
+
+      {
+
+        “domain_suffix”: [
+
+          “.arpa.”,
+
+          “.arpa”
+
+        ],
+
+        “server”: “block-dns”,
+
+        “rewrite_ttl”: 20
+
+      },
+
+      {
+
+        “domain_suffix”: [
+
+          “h.88981401.xyz”,
+
+          “arvancloudstatus.ir”,
+
+          “all-in.daiijannapoleon.fun”,
+
+          “arvancloudstatus.ir”,
+
+          “azadi2.dgi000.store”
+
+        ],
+
+        “server”: “direct-dns”,
+
+        “rewrite_ttl”: 20
+
+      },
+
+      {
+
+        “network”: “udp”,
+
+        “port”: 443,
+
+        “server”: “block-dns”,
+
+        “rewrite_ttl”: 20
+
+      },
+
+      {
+
+        “outbound”: “@FreeV2rng👈کانال+تلگرام”,
+
+        “server”: “@FreeV2rng👈کانال+تلگرام-dns”,
+
+        “rewrite_ttl”: 20
+
+      },
+
+      {
+
+        “outbound”: “@FreeV2rng”,
+
+        “server”: “@FreeV2rng-dns”,
+
+        “rewrite_ttl”: 20
+
+      },
+
+      {
+
+        “outbound”: “direct”,
+
+        “server”: “direct-dns”,
+
+        “rewrite_ttl”: 20
+
+      },
+
+      {
+
+        “outbound”: “any”,
+
+        “server”: “direct-dns”,
+
+        “rewrite_ttl”: 20
+
+      }
+
+    ],
+
+    “strategy”: “prefer_ipv6”,
+
+    “disable_expire”: true
+
+  },
+
+  “inbounds”: [
+
+    {
+
+      “type”: “tun”,
+
+      “tag”: “tun-in”,
+
+      “interface_name”: “tun0”,
+
+      “mtu”: 9000,
+
+      “inet4_address”: “172.19.0.1/30”,
+
+      “auto_route”: true,
+
+      “strict_route”: true,
+
+      “stack”: “mixed”,
+
+      “sniff”: true
+
+    },
+
+    {
+
+      “type”: “mixed”,
+
+      “tag”: “mixed-in”,
+
+      “listen”: “0.0.0.0”,
+
+      “listen_port”: 2080,
+
+      “sniff”: true,
+
+      “domain_strategy”: “prefer_ipv6”
+
+    }
+
+  ],
+
+  “outbounds”: [
+
+    {
+
+      “type”: “selector”,
+
+      “tag”: “@FreeV2rng👈کانال+تلگرام”,
+
+      “outbounds”: [
+
+        “@FreeV2rng”,
+
+
+
+                “✅@FreeV2rng👈🏻کانال تلگرام”,
+
+                “✴️@FreeV2rng👈🏻کانال تلگرام”,
+
+                “💠@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🍅@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🧅@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🌶️@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🍌@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🥕@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🃏@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🦋@FreeV2rng👈🏻کانال تلگرام”,
+
+                “💕@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🧡@FreeV2rng👈🏻کانال تلگرام”,
+
+                “⭐@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🔫@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🚭@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🪚@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🧨@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🎺@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🎹@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🩳@FreeV2rng👈🏻کانال تلگرام”,
+
+                “👙@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🩲@FreeV2rng👈🏻کانال تلگرام”
+
+      ]
+
+    },
+
+    {
+
+      “type”: “urltest”,
+
+      “tag”: “@FreeV2rng”,
+
+      “outbounds”: [
+
+
+
+                “✅@FreeV2rng👈🏻کانال تلگرام”,
+
+                “✴️@FreeV2rng👈🏻کانال تلگرام”,
+
+                “💠@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🍅@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🧅@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🌶️@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🍌@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🥕@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🃏@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🦋@FreeV2rng👈🏻کانال تلگرام”,
+
+                “💕@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🧡@FreeV2rng👈🏻کانال تلگرام”,
+
+                “⭐@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🔫@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🚭@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🪚@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🧨@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🎺@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🎹@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🩳@FreeV2rng👈🏻کانال تلگرام”,
+
+                “👙@FreeV2rng👈🏻کانال تلگرام”,
+
+                “🩲@FreeV2rng👈🏻کانال تلگرام”
+
+      ],
+
+      “url”: http://www.google.com/generate_204,
+
+      “interval”: “10m0s”,
+
+      “tolerance”: 50,
+
+      “idle_timeout”: “30m0s”
+
+    },
+
+ {
+
+      “type”: “http”,
+
+      “tag”: “✅@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “194.233.96.24”,
+
+      “server_port”: 90,
+
+      “username”: “yLoEDZiuRqdg8HqQfaEMXhzn”,
+
+      “password”: “Emy3zUbgjrz4mPxuwZSNmuLP”,
+
+      “tls”: {
+
+        “enabled”: true,
+
+        “server_name”: “gitlab.com”,
+
+        “insecure”: true,
+
+        “alpn”: “h2,http/1.1”
+
+      },
+
+      “headers”: {
+
+        “Host”: “marilynmanson.link”
+
+      }
+
+    },
+
+    {
+
+      “type”: “http”,
+
+      “tag”: “✴️@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “212.97.64.1”,
+
+      “server_port”: 89,
+
+      “username”: “yLoEDZiuRqdg8HqQfaEMXhzn”,
+
+      “password”: “Emy3zUbgjrz4mPxuwZSNmuLP”,
+
+      “tls”: {
+
+        “enabled”: true,
+
+        “server_name”: “gitlab.com”,
+
+        “insecure”: true,
+
+        “alpn”: “h2,http/1.1”
+
+      },
+
+      “headers”: {
+
+        “Host”: “marilynmanson.link”
+
+      }
+
+    },
+
+    {
+
+      “type”: “http”,
+
+      “tag”: “💠@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “45.137.78.3”,
+
+      “server_port”: 90,
+
+      “username”: “yLoEDZiuRqdg8HqQfaEMXhzn”,
+
+      “password”: “Emy3zUbgjrz4mPxuwZSNmuLP”,
+
+      “tls”: {
+
+        “enabled”: true,
+
+        “server_name”: “gitlab.com”,
+
+        “insecure”: true,
+
+        “alpn”: “h2,http/1.1”
+
+      },
+
+      “headers”: {
+
+        “Host”: “marilynmanson.link”
+
+      }
+
+    },
+
+      {
+
+      “type”: “http”,
+
+      “tag”: “🍅@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “81.17.123.114”,
+
+      “server_port”: 90,
+
+      “username”: “yLoEDZiuRqdg8HqQfaEMXhzn”,
+
+      “password”: “Emy3zUbgjrz4mPxuwZSNmuLP”,
+
+      “tls”: {
+
+        “enabled”: true,
+
+        “server_name”: “gitlab.com”,
+
+        “insecure”: true,
+
+        “alpn”: “h2,http/1.1”
+
+      },
+
+      “headers”: {
+
+        “Host”: “marilynmanson.link”
+
+      }
+
+    },
+
+    {
+
+      “type”: “http”,
+
+      “tag”: “🧅@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “212.97.64.1”,
+
+      “server_port”: 90,
+
+      “username”: “yLoEDZiuRqdg8HqQfaEMXhzn”,
+
+      “password”: “Emy3zUbgjrz4mPxuwZSNmuLP”,
+
+      “tls”: {
+
+        “enabled”: true,
+
+        “server_name”: “gitlab.com”,
+
+        “insecure”: true,
+
+        “alpn”: “h2,http/1.1”
+
+      },
+
+      “headers”: {
+
+        “Host”: “marilynmanson.link”
+
+      }
+
+    },
+
+    {
+
+  “type”: “http”,
+
+  “tag”: “🌶️@FreeV2rng👈🏻کانال تلگرام”,
+
+  “server”: “85.202.81.159”,
+
+  “server_port”: 90,
+
+  “username”: “E93HGGpA8jQPvnehhrA7DwoD”,
+
+  “password”: “C8dAN1ccgBNyBqG4WCFynQXH”,
+
+  “path”: “”,
+
+                “headers”: {
+
+                    “Host”: [
+
+                        “marilynmanson.link”
+
+                    ]
+
+                },
+
+  “tls”: {  “enabled”: true,
+
+  “disable_sni”: false,
+
+  “alpn”: [],
+
+  “server_name”: “32taksi.com”,
+
+  “insecure”: true}
+
+ 
+
+},
+
+    {
+
+  “type”: “http”,
+
+  “tag”: “🍌@FreeV2rng👈🏻کانال تلگرام”,
+
+  “server”: “194.233.96.87”,
+
+  “server_port”: 90,
+
+  “username”: “E93HGGpA8jQPvnehhrA7DwoD”,
+
+  “password”: “C8dAN1ccgBNyBqG4WCFynQXH”,
+
+  “path”: “”,
+
+                “headers”: {
+
+                    “Host”: [
+
+                        “marilynmanson.link”
+
+                    ]
+
+                },
+
+  “tls”: {  “enabled”: true,
+
+  “disable_sni”: false,
+
+  “alpn”: [],
+
+  “server_name”: “32taksi.com”,
+
+  “insecure”: true}
+
+},
+
+{
+
+  “type”: “http”,
+
+  “tag”: “🥕@FreeV2rng👈🏻کانال تلگرام”,
+
+  “server”: “45.137.78.3”,
+
+  “server_port”: 90,
+
+  “username”: “yLoEDZiuRqdg8HqQfaEMXhzn”,
+
+   “password”: “Emy3zUbgjrz4mPxuwZSNmuLP”,
+
+  “path”: “”,
+
+                “headers”: {
+
+                    “Host”: [
+
+                        “marilynmanson.link”
+
+                    ]
+
+                },
+
+  “tls”: {  “enabled”: true,
+
+  “disable_sni”: false,
+
+  “alpn”: [],
+
+  “server_name”: “32taksi.com”,
+
+  “insecure”: true}
+
+ 
+
+},
+
+{
+
+      “type”: “hysteria2”,
+
+      “tag”: “🃏@FreeV2rng👈🏻کانال تلگرام”,
+
+      “domain_strategy”: “prefer_ipv6”,
+
+      “server”: “h2.88981401.xyz”,
+
+      “server_port”: 443,
+
+      “password”: “yVdMahZlkkgk”,
+
+      “tls”: {
+
+        “enabled”: true,
+
+        “server_name”: “hy2.55994421.xyz”,
+
+        “alpn”: “h3”,
+
+        “min_version”: “1.3”,
+
+        “max_version”: “1.3”,
+
+        “ech”: {
+
+          “enabled”: true,
+
+          “pq_signature_schemes_enabled”: true,
+
+          “config”: [
+
+            “-----BEGIN ECH CONFIGS-----“,
+
+            “AFf+DQBTAAAgACBgC+U935o5TbXkGxia/GgQYBb3+goW2Z0l/6se3ObxZwAIAAEA”,
+
+            “AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=”,
+
+            “-----END ECH CONFIGS-----”
+
+          ]
+
+        }
+
+      }
+
+    },
+
+{
+
+      “type”: “shadowsocks”,
+
+      “tag”: “🦋@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “217.30.10.18”,
+
+      “server_port”: 9064,
+
+      “method”: “aes-256-cfb”,
+
+      “password”: “cp8pRSUAyLhTfVWH”
+
+    },
+
+
+
+    {
+
+      “type”: “shadowsocks”,
+
+      “tag”: “💕@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “217.30.10.18”,
+
+      “server_port”: 9014,
+
+      “method”: “aes-256-cfb”,
+
+      “password”: “KnJGad3FqTvjqbaX”
+
+    },
+
+    {
+
+      “type”: “shadowsocks”,
+
+      “tag”: “🧡@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “217.30.10.18”,
+
+      “server_port”: 9008,
+
+      “method”: “aes-256-cfb”,
+
+      “password”: “y9VURyNzJWNRYEGQ”
+
+    },
+
+    {
+
+      “type”: “shadowsocks”,
+
+      “tag”: “⭐@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “217.30.10.18”,
+
+      “server_port”: 9018,
+
+      “method”: “aes-256-cfb”,
+
+      “password”: “fG2artUmHfNT2cX7”
+
+    },
+
+    {
+
+      “type”: “shadowsocks”,
+
+      “tag”: “🔫@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “217.30.10.18”,
+
+      “server_port”: 9037,
+
+      “method”: “aes-256-cfb”,
+
+      “password”: “daFYagqDdBdA6VTX”
+
+    },
+
+    {
+
+      “type”: “shadowsocks”,
+
+      “tag”: “🚭@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “217.30.10.18”,
+
+      “server_port”: 9041,
+
+      “method”: “aes-256-cfb”,
+
+      “password”: “U6qnYRhfyDmn8sgn”
+
+    },
+
+
+
+        {
+
+      “type”: “shadowsocks”,
+
+      “tag”: “🪚@FreeV2rng👈🏻کانال تلگرام”,
+
+      “server”: “217.30.10.18”,
+
+      “server_port”: 9014,
+
+      “method”: “aes-256-cfb”,
+
+      “password”: “KnJGad3FqTvjqbaX”
+
+ },
+
+ {
+
+  “type”: “http”,
+
+  “tag”: “🧨@FreeV2rng👈🏻کانال تلگرام”,
+
+  “server”: “85.190.238.15”,
+
+  “server_port”: 90,
+
+  “username”: “E93HGGpA8jQPvnehhrA7DwoD”,
+
+  “password”: “C8dAN1ccgBNyBqG4WCFynQXH”,
+
+  “path”: “”,
+
+                “headers”: {
+
+                    “Host”: [
+
+                        “marilynmanson.link”
+
+                    ]
+
+                },
+
+  “tls”: {  “enabled”: true,
+
+  “disable_sni”: false,
+
+  “alpn”: [],
+
+  “server_name”: “32taksi.com”,
+
+  “insecure”: true}
+
+ 
+
+},
+
+{
+
+  “type”: “http”,
+
+  “tag”: “🎺@FreeV2rng👈🏻کانال تلگرام”,
+
+  “server”: “85.190.238.5”,
+
+  “server_port”: 90,
+
+  “username”: “E93HGGpA8jQPvnehhrA7DwoD”,
+
+  “password”: “C8dAN1ccgBNyBqG4WCFynQXH”,
+
+  “path”: “”,
+
+                “headers”: {
+
+                    “Host”: [
+
+                        “marilynmanson.link”
+
+                    ]
+
+                },
+
+  “tls”: {  “enabled”: true,
+
+  “disable_sni”: false,
+
+  “alpn”: [],
+
+  “server_name”: “32taksi.com”,
+
+  “insecure”: true}
+
+ 
+
+},
+
+{
+
+  “type”: “http”,
+
+  “tag”: “🎹@FreeV2rng👈🏻کانال تلگرام”,
+
+  “server”: “85.190.238.1”,
+
+  “server_port”: 90,
+
+  “username”: “E93HGGpA8jQPvnehhrA7DwoD”,
+
+  “password”: “C8dAN1ccgBNyBqG4WCFynQXH”,
+
+  “path”: “”,
+
+                “headers”: {
+
+                    “Host”: [
+
+                        “marilynmanson.link”
+
+                    ]
+
+                },
+
+  “tls”: {  “enabled”: true,
+
+  “disable_sni”: false,
+
+  “alpn”: [],
+
+  “server_name”: “32taksi.com”,
+
+  “insecure”: true}
+
+ 
+
+},
+
+{
+
+  “type”: “http”,
+
+  “tag”: “🩳@FreeV2rng👈🏻کانال تلگرام”,
+
+  “server”: “194.233.96.179”,
+
+  “server_port”: 90,
+
+  “username”: “yLoEDZiuRqdg8HqQfaEMXhzn”,
+
+  “password”: “Emy3zUbgjrz4mPxuwZSNmuLP”,
+
+  “path”: “”,
+
+                “headers”: {
+
+                    “Host”: [
+
+                        “marilynmanson.link”
+
+                    ]
+
+                },
+
+  “tls”: {  “enabled”: true,
+
+  “disable_sni”: false,
+
+  “alpn”: [“h2,http/1.1”],
+
+  “server_name”: “whatismyipaddress.com”,
+
+  “insecure”: true}
+
+ 
+
+},
+
+{
+
+  “type”: “http”,
+
+  “tag”: “👙@FreeV2rng👈🏻کانال تلگرام”,
+
+  “server”: “45.85.144.100”,
+
+  “server_port”: 90,
+
+  “username”: “E93HGGpA8jQPvnehhrA7DwoD”,
+
+  “password”: “C8dAN1ccgBNyBqG4WCFynQXH”,
+
+  “path”: “”,
+
+                “headers”: {
+
+                    “Host”: [
+
+                        “marilynmanson.link”
+
+                    ]
+
+                },
+
+  “tls”: {  “enabled”: true,
+
+  “disable_sni”: false,
+
+  “alpn”: [“h2,http/1.1”],
+
+  “server_name”: “icloud.cdn-apple.com”,
+
+  “insecure”: true}
+
+ 
+
+},
+
+{
+
+  “type”: “http”,
+
+  “tag”: “🩲@FreeV2rng👈🏻کانال تلگرام”,
+
+  “server”: “45.85.144.100”,
+
+  “server_port”: 90,
+
+  “username”: “E93HGGpA8jQPvnehhrA7DwoD”,
+
+  “password”: “C8dAN1ccgBNyBqG4WCFynQXH”,
+
+  “path”: “”,
+
+                “headers”: {
+
+                    “Host”: [
+
+                        “marilynmanson.link”
+
+                    ]
+
+                },
+
+  “tls”: {  “enabled”: true,
+
+  “disable_sni”: false,
+
+  “alpn”: [“h2,http/1.1”],
+
+  “server_name”: “icloud.cdn-apple.com”,
+
+  “insecure”: true}
+
+ 
+
+},
+
+    {
+
+      “type”: “direct”,
+
+      “tag”: “direct”
+
+    },
+
+    {
+
+      “type”: “block”,
+
+      “tag”: “block”
+
+    },
+
+    {
+
+      “type”: “dns”,
+
+      “tag”: “dns-out”
+
+    }
+
+  ],
+
+  “route”: {
+
+    “rules”: [
+
+      {
+
+        “port”: 53,
+
+        “outbound”: “dns-out”
+
+      },
+
+      {
+
+        “ip_is_private”: true,
+
+        “outbound”: “direct”
+
+      }
+
+    ],
+
+    “final”: “@FreeV2rng👈کانال+تلگرام",
+
+    “auto_detect_interface”: true,
+
+    “override_android_vpn”: true
+
+  },
+
+  “experimental”: {
+
+    “cache_file”: {
+
+      “enabled”: true,
+
+      “path”: “cache.db”,
+
+      “cache_id”: “azadi”,
+
+      “rdrc_timeout”: “168h0m0s”
+
+    }
+
+  }
+
