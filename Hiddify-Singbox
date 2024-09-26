@@ -5,17 +5,17 @@
             "tag": "Select",
             "outbounds": [
                 "Auto",
-                "FREEV2RNG.soft10.ir tls WS CDN vless § 443 4",
-                "FREEV2RNG.soft10.ir tls WS CDN trojan § 443 4",
-                "FREEV2RNG.soft10.ir tls WS CDN vmess § 443 4",
-                "FREEV2RNG.soft10.ir tls httpupgrade CDN vless § 443 4",
-                "FREEV2RNG.soft10.ir tls httpupgrade CDN vmess § 443 4",
-                "FREEV2RNG1.soft10.ir tls XTLS relay vless § 443 5",
-                "FREEV2RNG1.soft10.ir tls WS relay vless § 443 5",
-                "FREEV2RNG1.soft10.ir tls WS relay trojan § 443 5",
-                "FREEV2RNG1.soft10.ir tls WS relay vmess § 443 5",
-                "FREEV2RNG1.soft10.ir tls httpupgrade relay vless § 443 5",
-                "FREEV2RNG1.soft10.ir tls httpupgrade relay vmess § 443 5"
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG"
             ],
             "default": "Auto"
         },
@@ -23,17 +23,17 @@
             "type": "urltest",
             "tag": "Auto",
             "outbounds": [
-                "FREEV2RNG.soft10.ir tls WS CDN vless § 443 4",
-                "FREEV2RNG.soft10.ir tls WS CDN trojan § 443 4",
-                "FREEV2RNG.soft10.ir tls WS CDN vmess § 443 4",
-                "FREEV2RNG.soft10.ir tls httpupgrade CDN vless § 443 4",
-                "FREEV2RNG.soft10.ir tls httpupgrade CDN vmess § 443 4",
-                "FREEV2RNG1.soft10.ir tls XTLS relay vless § 443 5",
-                "FREEV2RNG1.soft10.ir tls WS relay vless § 443 5",
-                "FREEV2RNG1.soft10.ir tls WS relay trojan § 443 5",
-                "FREEV2RNG1.soft10.ir tls WS relay vmess § 443 5",
-                "FREEV2RNG1.soft10.ir tls httpupgrade relay vless § 443 5",
-                "FREEV2RNG1.soft10.ir tls httpupgrade relay vmess § 443 5"
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG",
+                "kanal-@FREEV2RNG"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "10m",
@@ -56,14 +56,14 @@
             "type": "dns"
         },
         {
-            "tag": "FREEV2RNG.soft10.ir tls WS CDN vless § 443 4",
+            "tag": "kanal-@FREEV2RNG",
             "type": "vless",
-            "server": "FREEV2RNG.soft10.ir",
+            "server": "sinabigo.soft10.ir",
             "server_port": 443,
             "uuid": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG.soft10.ir",
+                "server_name": "sinabigo.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -76,22 +76,22 @@
             "packet_encoding": "xudp",
             "transport": {
                 "type": "ws",
-                "path": "/Bia--FREEV2RNG--FREEV2RNG--LqZwXyhqvlBwEC",
+                "path": "/Bia--SiNABiGO--SiNABiGO--LqZwXyhqvlBwEC",
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
-                    "Host": "FREEV2RNG.soft10.ir"
+                    "Host": "sinabigo.soft10.ir"
                 }
             }
         },
         {
-            "tag": "FREEV2RNG.soft10.ir tls WS CDN trojan § 443 4",
+            "tag": "kanal-@FREEV2RNG",
             "type": "trojan",
-            "server": "FREEV2RNG.soft10.ir",
+            "server": "sinabigo.soft10.ir",
             "server_port": 443,
             "password": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG.soft10.ir",
+                "server_name": "sinabigo.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -103,22 +103,22 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/Channel--FREEV2RNG-FREEV2RNG-FREEV2RNG--LqZwXyhqvlBwEC",
+                "path": "/Channel--SiNABiGO-SiNABiGO-SiNABiGO--LqZwXyhqvlBwEC",
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
-                    "Host": "FREEV2RNG.soft10.ir"
+                    "Host": "sinabigo.soft10.ir"
                 }
             }
         },
         {
-            "tag": "FREEV2RNG.soft10.ir tls WS CDN vmess § 443 4",
+            "tag": "kanal-@FREEV2RNG",
             "type": "vmess",
-            "server": "FREEV2RNG.soft10.ir",
+            "server": "sinabigo.soft10.ir",
             "server_port": 443,
             "uuid": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG.soft10.ir",
+                "server_name": "sinabigo.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -133,22 +133,22 @@
             "packet_encoding": "xudp",
             "transport": {
                 "type": "ws",
-                "path": "/Joinin--FREEV2RNG--FREEV2RNG--LqZwXyhqvlBwEC",
+                "path": "/Joinin--SiNABiGO--SiNABiGO--LqZwXyhqvlBwEC",
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
-                    "Host": "FREEV2RNG.soft10.ir"
+                    "Host": "sinabigo.soft10.ir"
                 }
             }
         },
         {
-            "tag": "FREEV2RNG.soft10.ir tls httpupgrade CDN vless § 443 4",
+            "tag": "kanal-@FREEV2RNG",
             "type": "vless",
-            "server": "FREEV2RNG.soft10.ir",
+            "server": "sinabigo.soft10.ir",
             "server_port": 443,
             "uuid": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG.soft10.ir",
+                "server_name": "sinabigo.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -161,21 +161,21 @@
             "packet_encoding": "xudp",
             "transport": {
                 "type": "httpupgrade",
-                "path": "/Bia--FREEV2RNG--FREEV2RNG--QwlIKtjyLyH",
+                "path": "/Bia--SiNABiGO--SiNABiGO--QwlIKtjyLyH",
                 "headers": {
-                    "Host": "FREEV2RNG.soft10.ir"
+                    "Host": "sinabigo.soft10.ir"
                 }
             }
         },
         {
-            "tag": "FREEV2RNG.soft10.ir tls httpupgrade CDN vmess § 443 4",
+            "tag": "kanal-@FREEV2RNG",
             "type": "vmess",
-            "server": "FREEV2RNG.soft10.ir",
+            "server": "sinabigo.soft10.ir",
             "server_port": 443,
             "uuid": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG.soft10.ir",
+                "server_name": "sinabigo.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -190,21 +190,21 @@
             "packet_encoding": "xudp",
             "transport": {
                 "type": "httpupgrade",
-                "path": "/Joinin--FREEV2RNG--FREEV2RNG--QwlIKtjyLyH",
+                "path": "/Joinin--SiNABiGO--SiNABiGO--QwlIKtjyLyH",
                 "headers": {
-                    "Host": "FREEV2RNG.soft10.ir"
+                    "Host": "sinabigo.soft10.ir"
                 }
             }
         },
         {
-            "tag": "FREEV2RNG1.soft10.ir tls XTLS relay vless § 443 5",
+            "tag": "kanal-@FREEV2RNG",
             "type": "vless",
-            "server": "FREEV2RNG1.soft10.ir",
+            "server": "sinabigo1.soft10.ir",
             "server_port": 443,
             "uuid": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG1.soft10.ir",
+                "server_name": "sinabigo1.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -222,19 +222,19 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "host": [
-                    "FREEV2RNG1.soft10.ir"
+                    "sinabigo1.soft10.ir"
                 ]
             }
         },
         {
-            "tag": "FREEV2RNG1.soft10.ir tls WS relay vless § 443 5",
+            "tag": "kanal-@FREEV2RNG",
             "type": "vless",
-            "server": "FREEV2RNG1.soft10.ir",
+            "server": "sinabigo1.soft10.ir",
             "server_port": 443,
             "uuid": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG1.soft10.ir",
+                "server_name": "sinabigo1.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -247,22 +247,22 @@
             "packet_encoding": "xudp",
             "transport": {
                 "type": "ws",
-                "path": "/Bia--FREEV2RNG--FREEV2RNG--LqZwXyhqvlBwEC",
+                "path": "/Bia--SiNABiGO--SiNABiGO--LqZwXyhqvlBwEC",
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
-                    "Host": "FREEV2RNG1.soft10.ir"
+                    "Host": "sinabigo1.soft10.ir"
                 }
             }
         },
         {
-            "tag": "FREEV2RNG1.soft10.ir tls WS relay trojan § 443 5",
+            "tag": "kanal-@FREEV2RNG",
             "type": "trojan",
-            "server": "FREEV2RNG1.soft10.ir",
+            "server": "sinabigo1.soft10.ir",
             "server_port": 443,
             "password": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG1.soft10.ir",
+                "server_name": "sinabigo1.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -274,22 +274,22 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/Channel--FREEV2RNG-FREEV2RNG-FREEV2RNG--LqZwXyhqvlBwEC",
+                "path": "/Channel--SiNABiGO-SiNABiGO-SiNABiGO--LqZwXyhqvlBwEC",
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
-                    "Host": "FREEV2RNG1.soft10.ir"
+                    "Host": "sinabigo1.soft10.ir"
                 }
             }
         },
         {
-            "tag": "FREEV2RNG1.soft10.ir tls WS relay vmess § 443 5",
+            "tag": "kanal-@FREEV2RNG",
             "type": "vmess",
-            "server": "FREEV2RNG1.soft10.ir",
+            "server": "sinabigo1.soft10.ir",
             "server_port": 443,
             "uuid": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG1.soft10.ir",
+                "server_name": "sinabigo1.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -304,22 +304,22 @@
             "packet_encoding": "xudp",
             "transport": {
                 "type": "ws",
-                "path": "/Joinin--FREEV2RNG--FREEV2RNG--LqZwXyhqvlBwEC",
+                "path": "/Joinin--SiNABiGO--SiNABiGO--LqZwXyhqvlBwEC",
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
-                    "Host": "FREEV2RNG1.soft10.ir"
+                    "Host": "sinabigo1.soft10.ir"
                 }
             }
         },
         {
-            "tag": "FREEV2RNG1.soft10.ir tls httpupgrade relay vless § 443 5",
+            "tag": "kanal-@FREEV2RNG",
             "type": "vless",
-            "server": "FREEV2RNG1.soft10.ir",
+            "server": "sinabigo1.soft10.ir",
             "server_port": 443,
             "uuid": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG1.soft10.ir",
+                "server_name": "sinabigo1.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -332,21 +332,21 @@
             "packet_encoding": "xudp",
             "transport": {
                 "type": "httpupgrade",
-                "path": "/Bia--FREEV2RNG--FREEV2RNG--QwlIKtjyLyH",
+                "path": "/Bia--SiNABiGO--SiNABiGO--QwlIKtjyLyH",
                 "headers": {
-                    "Host": "FREEV2RNG1.soft10.ir"
+                    "Host": "sinabigo1.soft10.ir"
                 }
             }
         },
         {
-            "tag": "FREEV2RNG1.soft10.ir tls httpupgrade relay vmess § 443 5",
+            "tag": "kanal-@FREEV2RNG",
             "type": "vmess",
-            "server": "FREEV2RNG1.soft10.ir",
+            "server": "sinabigo1.soft10.ir",
             "server_port": 443,
             "uuid": "1bf36abe-aa32-41f5-9523-70d713645ba6",
             "tls": {
                 "enabled": true,
-                "server_name": "FREEV2RNG1.soft10.ir",
+                "server_name": "sinabigo1.soft10.ir",
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
@@ -361,9 +361,9 @@
             "packet_encoding": "xudp",
             "transport": {
                 "type": "httpupgrade",
-                "path": "/Joinin--FREEV2RNG--FREEV2RNG--QwlIKtjyLyH",
+                "path": "/Joinin--SiNABiGO--SiNABiGO--QwlIKtjyLyH",
                 "headers": {
-                    "Host": "FREEV2RNG1.soft10.ir"
+                    "Host": "sinabigo1.soft10.ir"
                 }
             }
         }
@@ -474,9 +474,9 @@
                     "raw.githubusercontent.com",
                     "1.1.1.1",
                     "www.getdrupe.com",
-                    "FREEV2RNG.FREEV2RNG.soft10.ir",
-                    "FREEV2RNG.soft10.ir",
-                    "FREEV2RNG1.soft10.ir"
+                    "sinabigo.sinabigo.soft10.ir",
+                    "sinabigo.soft10.ir",
+                    "sinabigo1.soft10.ir"
                 ],
                 "server": "dns-local"
             },
