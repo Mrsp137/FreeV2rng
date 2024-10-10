@@ -1,0 +1,1506 @@
+{
+  "log": {
+    "output": "box.log",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "",
+        "address_resolver": "dns-direct"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "detour": "direct-fragment"
+      },
+      {
+        "tag": "dns-direct",
+        "address": "",
+        "address_resolver": "dns-local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "d.wanchai.homes",
+          "d.lammaland.org",
+          "e.lammaland.org",
+          "taitak.homes",
+          "bs.taitak.homes",
+          "c.mantung.homes",
+          "b.hungshing.org",
+          "kenned.homes",
+          "wanchai.homes",
+          "v.valkinin.org",
+          "cs.taitak.homes",
+          "mantung.homes",
+          "e.wanchai.homes",
+          "lammaland.org",
+          "ds.kenned.homes",
+          "es.kenned.homes",
+          "",
+          "valkinin.org",
+          "p.powah.homes",
+          "hungshing.org",
+          "c.hungshing.org",
+          "b.mantung.homes"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "domain": "cp.cloudflare.com",
+        "server": "dns-remote",
+        "rewrite_ttl": 3000
+      },
+      {
+        "rule_set": [
+          "geoip-",
+          "geosite-"
+        ],
+        "server": "dns-direct"
+      }
+    ],
+    "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "104.17.148.22",
+        "104.17.147.22",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
+        "188.114.97.3",
+        "188.114.96.3"
+      ]
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "127.0.0.1"
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "Channel id: @FREEV2RNG 🇨🇦 § 0",
+        "Channel id: @FREEV2RNG 🇨🇦 § 1",
+        "Channel id: @FREEV2RNG 🇨🇦 § 2",
+        "Channel id: @FREEV2RNG 🇺🇸 § 3",
+        "Channel id: @FREEV2RNG 🇬🇧 § 4",
+        "Channel id: @FREEV2RNG 🇺🇸 § 5",
+        "Channel id: @FREEV2RNG 🇩🇪 § 6",
+        "Channel id: @FREEV2RNG 🇨🇦 § 7",
+        "Channel id: @FREEV2RNG  § 8",
+        "Channel id: @FREEV2RNG 🇧🇷 § 9",
+        "Channel id: @FREEV2RNG 🇯🇵 § 10",
+        "Channel id: @FREEV2RNG 🇸🇬 § 11",
+        "Channel id: @FREEV2RNG 🇦🇺 § 12",
+        "Channel id: @FREEV2RNG 🇮🇳 § 13",
+        "Channel id: @FREEV2RNG  § 14",
+        "Channel id: @FREEV2RNG 🇨🇦 § 15",
+        "Channel id: @FREEV2RNG 🇨🇦 § 16",
+        "Channel id: @FREEV2RNG 🇨🇦 § 17",
+        "Channel id: @FREEV2RNG 🇨🇦 § 18",
+        "Channel id: @FREEV2RNG 🇨🇦 § 19",
+        "Channel id: @FREEV2RNG 🇨🇦 § 20",
+        "Channel id: @FREEV2RNG 🇨🇦 § 21",
+        "Channel id: @FREEV2RNG 🇨🇦 § 22",
+        "Channel id: @FREEV2RNG 🇨🇦 § 23",
+        "Channel id: @FREEV2RNG 🇨🇦 § 24",
+        "Channel id: @FREEV2RNG 🇨🇦 § 25",
+        "Channel id: @FREEV2RNG 🇨🇦 § 26",
+        "Channel id: @FREEV2RNG 🇬🇧 § 27",
+        "Channel id: @FREEV2RNG 🇬🇧 § 28",
+        "Channel id: @FREEV2RNG 🇨🇦 § 29",
+        "Channel id: @FREEV2RNG 🇨🇦 § 30",
+        "Channel id: @FREEV2RNG 🇨🇦 § 31",
+        "Channel id: @FREEV2RNG 🇨🇦 § 32",
+        "Channel id: @FREEV2RNG 🇫🇷 § 33",
+        "Channel id: @FREEV2RNG 🇩🇪 § 34",
+        "Channel id: @FREEV2RNG 🇩🇪 § 35",
+        "Channel id: @FREEV2RNG 🇨🇭 § 36",
+        "Channel id: @FREEV2RNG 🇨🇭 § 37",
+        "Channel id: @FREEV2RNG 🇺🇸 § 38",
+        "Channel id: @FREEV2RNG 🇺🇸 § 39",
+        "Channel id: @FREEV2RNG 🇳🇱 § 40",
+        "Channel id: @FREEV2RNG 🇬🇧 § 41",
+        "Channel id: @FREEV2RNG 🇨🇦 § 42",
+        "Channel id: @FREEV2RNG 🇨🇦 § 43"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "Channel id: @FREEV2RNG 🇨🇦 § 0",
+        "Channel id: @FREEV2RNG 🇨🇦 § 1",
+        "Channel id: @FREEV2RNG 🇨🇦 § 2",
+        "Channel id: @FREEV2RNG 🇺🇸 § 3",
+        "Channel id: @FREEV2RNG 🇬🇧 § 4",
+        "Channel id: @FREEV2RNG 🇺🇸 § 5",
+        "Channel id: @FREEV2RNG 🇩🇪 § 6",
+        "Channel id: @FREEV2RNG 🇨🇦 § 7",
+        "Channel id: @FREEV2RNG  § 8",
+        "Channel id: @FREEV2RNG 🇧🇷 § 9",
+        "Channel id: @FREEV2RNG 🇯🇵 § 10",
+        "Channel id: @FREEV2RNG 🇸🇬 § 11",
+        "Channel id: @FREEV2RNG 🇦🇺 § 12",
+        "Channel id: @FREEV2RNG 🇮🇳 § 13",
+        "Channel id: @FREEV2RNG  § 14",
+        "Channel id: @FREEV2RNG 🇨🇦 § 15",
+        "Channel id: @FREEV2RNG 🇨🇦 § 16",
+        "Channel id: @FREEV2RNG 🇨🇦 § 17",
+        "Channel id: @FREEV2RNG 🇨🇦 § 18",
+        "Channel id: @FREEV2RNG 🇨🇦 § 19",
+        "Channel id: @FREEV2RNG 🇨🇦 § 20",
+        "Channel id: @FREEV2RNG 🇨🇦 § 21",
+        "Channel id: @FREEV2RNG 🇨🇦 § 22",
+        "Channel id: @FREEV2RNG 🇨🇦 § 23",
+        "Channel id: @FREEV2RNG 🇨🇦 § 24",
+        "Channel id: @FREEV2RNG 🇨🇦 § 25",
+        "Channel id: @FREEV2RNG 🇨🇦 § 26",
+        "Channel id: @FREEV2RNG 🇬🇧 § 27",
+        "Channel id: @FREEV2RNG 🇬🇧 § 28",
+        "Channel id: @FREEV2RNG 🇨🇦 § 29",
+        "Channel id: @FREEV2RNG 🇨🇦 § 30",
+        "Channel id: @FREEV2RNG 🇨🇦 § 31",
+        "Channel id: @FREEV2RNG 🇨🇦 § 32",
+        "Channel id: @FREEV2RNG 🇫🇷 § 33",
+        "Channel id: @FREEV2RNG 🇩🇪 § 34",
+        "Channel id: @FREEV2RNG 🇩🇪 § 35",
+        "Channel id: @FREEV2RNG 🇨🇭 § 36",
+        "Channel id: @FREEV2RNG 🇨🇭 § 37",
+        "Channel id: @FREEV2RNG 🇺🇸 § 38",
+        "Channel id: @FREEV2RNG 🇺🇸 § 39",
+        "Channel id: @FREEV2RNG 🇳🇱 § 40",
+        "Channel id: @FREEV2RNG 🇬🇧 § 41",
+        "Channel id: @FREEV2RNG 🇨🇦 § 42",
+        "Channel id: @FREEV2RNG 🇨🇦 § 43"
+      ]
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 0",
+      "server": "valkinin.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "valkinin.org",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "valkinin.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 1",
+      "server": "v.valkinin.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "v.valkinin.org",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "v.valkinin.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 2",
+      "server": "p.powah.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "p.powah.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "p.powah.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇺🇸 § 3",
+      "server": "38.99.82.64",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "38.99.82.64",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "38.99.82.64"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇬🇧 § 4",
+      "server": "57.128.184.119",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "57.128.184.119",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "57.128.184.119"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇺🇸 § 5",
+      "server": "38.75.136.20",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "38.75.136.20",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "38.75.136.20"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇩🇪 § 6",
+      "server": "57.129.24.139",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "57.129.24.139",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "57.129.24.139"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 7",
+      "server": "23.162.200.103",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "23.162.200.103",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "23.162.200.103"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG  § 8",
+      "server": "103.215.218.222",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "103.215.218.222",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "103.215.218.222"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇧🇷 § 9",
+      "server": "172.233.19.143",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "172.233.19.143",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "172.233.19.143"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇯🇵 § 10",
+      "server": "92.38.178.69",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "92.38.178.69",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "92.38.178.69"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇸🇬 § 11",
+      "server": "139.162.49.11",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "139.162.49.11",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "139.162.49.11"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇦🇺 § 12",
+      "server": "194.195.248.174",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "194.195.248.174",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "194.195.248.174"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇮🇳 § 13",
+      "server": "172.105.56.166",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "172.105.56.166",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "172.105.56.166"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG  § 14",
+      "server": "5.188.33.167",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "5.188.33.167",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "5.188.33.167"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 15",
+      "server": "hungshing.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "hungshing.org",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "hungshing.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 16",
+      "server": "b.hungshing.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "b.hungshing.org",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "b.hungshing.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 17",
+      "server": "c.hungshing.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "c.hungshing.org",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "c.hungshing.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 18",
+      "server": "d.lammaland.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "d.lammaland.org",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "d.lammaland.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 19",
+      "server": "e.lammaland.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "e.lammaland.org",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "e.lammaland.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 20",
+      "server": "lammaland.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "lammaland.org",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "lammaland.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 21",
+      "server": "taitak.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "taitak.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "taitak.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 22",
+      "server": "bs.taitak.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "bs.taitak.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "bs.taitak.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 23",
+      "server": "cs.taitak.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "cs.taitak.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "cs.taitak.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 24",
+      "server": "kenned.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "kenned.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "kenned.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 25",
+      "server": "ds.kenned.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "ds.kenned.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "ds.kenned.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 26",
+      "server": "es.kenned.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "es.kenned.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "es.kenned.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇬🇧 § 27",
+      "server": "mantung.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "mantung.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mantung.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇬🇧 § 28",
+      "server": "b.mantung.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "b.mantung.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "b.mantung.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 29",
+      "server": "c.mantung.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "c.mantung.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "c.mantung.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 30",
+      "server": "d.wanchai.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "d.wanchai.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "d.wanchai.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 31",
+      "server": "e.wanchai.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "e.wanchai.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "e.wanchai.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 32",
+      "server": "wanchai.homes",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "wanchai.homes",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "wanchai.homes"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇫🇷 § 33",
+      "server": "23.162.152.146",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "23.162.152.146",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "23.162.152.146"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇩🇪 § 34",
+      "server": "23.157.88.20",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "23.157.88.20",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "23.157.88.20"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇩🇪 § 35",
+      "server": "23.158.56.129",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "23.158.56.129",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "23.158.56.129"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇭 § 36",
+      "server": "23.166.88.27",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "23.166.88.27",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "23.166.88.27"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇭 § 37",
+      "server": "186.190.215.139",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "186.190.215.139",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "186.190.215.139"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇺🇸 § 38",
+      "server": "38.99.82.141",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "38.99.82.141",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "38.99.82.141"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇺🇸 § 39",
+      "server": "38.91.106.79",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "38.91.106.79",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "38.91.106.79"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇳🇱 § 40",
+      "server": "185.221.219.211",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "185.221.219.211",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "185.221.219.211"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇬🇧 § 41",
+      "server": "68.168.31.244",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "68.168.31.244",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "68.168.31.244"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 42",
+      "server": "23.162.200.141",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "23.162.200.141",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "23.162.200.141"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel id: @FREEV2RNG 🇨🇦 § 43",
+      "server": "134.195.198.171",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "134.195.198.171",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "134.195.198.171"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-fragment",
+      "tls_fragment": {
+        "enabled": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "bypass"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "rule_set": [
+          "geoip-",
+          "geosite-"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geoip-.srs",
+        "update_interval": "120h0m0s"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-.srs",
+        "update_interval": "120h0m0s"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  }
+}
