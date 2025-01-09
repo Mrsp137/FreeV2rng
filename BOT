@@ -1,0 +1,47 @@
+import telebot
+
+bot = telebot.TeleBot('7769634363:AAFsQ-THwqYOE5m7MZxwNERr8oD-_Emjh6g')
+
+
+@bot.message_handler(regexp="alpha_v2ray_fazayi")
+def edit(message):
+    text = message.text.replace("alpha_v2ray_fazayi", "FreeV2rng")
+    bot.send_message(message.chat.id, text)
+
+
+@bot.message_handler(regexp="ShadowProxy66")
+def editShadow(message):
+    text = message.text.replace("ShadowProxy66", "FreeV2rng")
+    bot.send_message(message.chat.id, text)
+
+
+@bot.message_handler(regexp="VPNCUSTOMIZE")
+def editVpn(message):
+    text = message.text.replace("@VPNCUSTOMIZE", "@FreeV2rng")
+    bot.send_message(message.chat.id, text)
+
+
+@bot.message_handler(regexp="ELiV2RAY")
+def editEli(message):
+    text = message.text.replace("@ELiV2RAY", "@FreeV2rng")
+    bot.send_message(message.chat.id, text)
+
+
+@bot.message_handler(regexp="proxy_mtm")
+def editPro(message):
+    text = message.text.replace("proxy_mtm", "FreeV2rng")
+    bot.send_message(message.chat.id, text)
+
+
+@bot.message_handler(regexp="PROXY_MTM")
+def editPrO(message):
+    text = message.text.replace("PROXY_MTM", "FreeV2rng")
+    bot.send_message(message.chat.id, text)
+
+
+@bot.message_handler(func=lambda msg: True)
+def WelcomeMessage(message):
+    bot.send_message(message.chat.id, "کانفیگ خود را ارسال کنید.")
+
+
+bot.polling()
